@@ -1,0 +1,23 @@
+var numberOfBottles = 99
+while (numberOfBottles >= 0) {
+    var bottleWord = "bottle";
+    if (numberOfBottles === 1) {
+        bottleWord = "bottles";
+    } 
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+    console.log(numberOfBottles + " " + bottleWord + " of beer,");
+    console.log("Take one down, pass it around,");
+	numberOfBottles--;
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+}
+O que cada parte do código faz:
+
+var numberOfBottles = 99: Isso inicializa a variável numberOfBottles com o valor 99, que representa o número inicial de garrafas de cerveja na parede.
+while (numberOfBottles >= 0) {: Este é um loop while que executa enquanto o valor de numberOfBottles for maior ou igual a zero. Isso significa que o loop continuará até que não haja mais garrafas de cerveja na parede.
+var bottleWord = "bottle";: Aqui, uma variável chamada bottleWord é inicializada com o valor "bottle". Esta variável será usada para determinar se deve ser usado "bottle" ou "bottles" dependendo do número de garrafas.
+if (numberOfBottles === 1) { bottleWord = "bottles"; }: Esta é uma declaração condicional if que verifica se há apenas uma garrafa de cerveja na parede. Se for verdadeiro (ou seja, numberOfBottles for igual a 1), então bottleWord é atualizado para "bottles", caso contrário, permanece como "bottle".
+console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");: Esta linha imprime a frase "X bottles of beer on the wall", onde "X" é o valor atual de numberOfBottles e bottleWord é "bottle" ou "bottles" dependendo do valor de numberOfBottles.
+console.log(numberOfBottles + " " + bottleWord + " of beer,");: Esta linha imprime a frase "X bottles of beer,", similar à anterior.
+console.log("Take one down, pass it around,");: Esta linha imprime a frase "Take one down, pass it around,", indicando que uma garrafa foi retirada da parede e passada adiante.
+numberOfBottles--;: Isso diminui o valor de numberOfBottles em 1, representando a remoção de uma garrafa da parede.
+console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");: Finalmente, esta linha imprime a frase "X bottles of beer on the wall." após uma garrafa ter sido retirada.
